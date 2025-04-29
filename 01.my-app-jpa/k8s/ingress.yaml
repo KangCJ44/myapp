@@ -40,5 +40,5 @@ spec:
   tls:
   - hosts:
     - sk002-tls.skala25a.project.skala-ai.com
-    secretName: sk002-ingress-tls-secret
+    secretName: sk002-cm-suto-tls-secret
 
