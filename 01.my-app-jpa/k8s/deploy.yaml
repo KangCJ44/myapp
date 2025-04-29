@@ -19,6 +19,18 @@ spec:
         app: sk002-my-app
     spec:
       serviceAccountName: default
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - sk002-my-app
+              topologyKey: "kubernetes.io/hostname"
       containers:
       - name: my-app
         image: amdp-registry.skala-ai.com/skala25a/sk002-seconde-app:2.0.0-4-b842c0f62c78
