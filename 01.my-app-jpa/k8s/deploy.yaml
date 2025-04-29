@@ -27,6 +27,6 @@ spec:
         - name: LOGGING_LEVEL
           value: DEBUG
         - name: USER_NAME
-          value: sk000
+          value: sk002
         - name: NAMESPACE
           value: skala-practice
