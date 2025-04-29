@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sk002-my-app-config
+  namespace: skala-practice
+data:
+  USER_NAME: sk002
+  NAMESPACE: skala-practice
